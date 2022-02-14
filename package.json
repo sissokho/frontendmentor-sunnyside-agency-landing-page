@@ -1,0 +1,19 @@
+{
+    "name": "frontendmentor-sunnyside-agency-landing-page",
+    "version": "1.0.0",
+    "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
+    "main": "index.js",
+    "scripts": {
+        "lint": "prettier --check .",
+        "format": "prettier --write .",
+        "prepare": "husky install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "husky": "^7.0.4",
+        "prettier": "2.5.1",
+        "prettier-plugin-tailwindcss": "^0.1.7"
+    }
+}
