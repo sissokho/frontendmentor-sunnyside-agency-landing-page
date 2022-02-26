@@ -18,11 +18,12 @@
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
         <link rel="stylesheet" href="/src/css/tailwind.css" />
+        <script src="/src/js/main.js" type="module"></script>
     </head>
-    <body class="debug-screens min-h-screen text-lg">
+    <body class="debug-screens min-h-screen font-barlow text-lg">
         <!-- Header -->
         <header class="bg-[url('./images/mobile/image-header.jpg')] bg-cover bg-bottom px-6 pt-8 pb-32">
-            <div class="mx-auto max-w-[1440px]">
+            <div class="relative mx-auto max-w-[1440px]">
                 <div class="flex justify-between">
                     <!-- Logo -->
                     <svg width="124" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -32,24 +33,32 @@
                             fill-rule="nonzero"
                         />
                     </svg>
+
+                    <!-- Menu -->
                     <div>
                         <!-- Mobile menu trigger -->
-                        <span>
-                            <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
-                                    fill="#FFF"
-                                    fill-rule="evenodd"
-                                />
+                        <span id="mobile-menu-trigger" role="button" class="cursor-pointer">
+                            <svg class="fill-white/50" width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill-rule="evenodd" />
                             </svg>
                         </span>
-                        <!-- Menu -->
-                        <nav class="hidden">
-                            <ul>
+
+                        <!-- Menu links -->
+                        <nav
+                            id="mobile-menu"
+                            class="absolute inset-0 top-20 hidden w-full bg-white opacity-0 transition-opacity duration-500 before:absolute before:right-0 before:h-0 before:w-0 before:-translate-y-1/2 before:border-[1.5rem] before:border-transparent before:border-r-white"
+                        >
+                            <ul class="flex h-full flex-col items-center justify-evenly text-xl text-blue-dark-grayish">
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="#">Projects</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="inline-block rounded-full bg-yellow py-4 px-6 font-fraunces text-base font-bold uppercase text-blue-dark-desaturated"
+                                        >Contact</a
+                                    >
+                                </li>
                             </ul>
                         </nav>
                     </div>
