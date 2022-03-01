@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .after-hover-yellow:hover::after {
+        background-color: theme('colors.yellow');
+    }
+
+    .after-hover-red:hover::after {
+        background-color: theme('colors.red');
+    }
+}
