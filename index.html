@@ -23,7 +23,7 @@
     <body class="debug-screens min-h-screen font-barlow text-lg">
         <!-- Header -->
         <header
-            class="bg-[url('./images/mobile/image-header.jpg')] bg-cover bg-bottom px-6 pt-8 pb-32 md:h-[650px] md:bg-[url('images/desktop/image-header.jpg')]"
+            class="relative bg-[url('./images/mobile/image-header.jpg')] bg-cover bg-bottom px-6 pt-8 pb-32 md:h-[650px] md:bg-[url('images/desktop/image-header.jpg')]"
         >
             <!-- <div class="relative mx-auto max-w-[1440px]"> -->
             <div class="flex justify-between md:items-center">
@@ -48,7 +48,7 @@
                     <!-- Menu links -->
                     <nav
                         id="mobile-menu"
-                        class="absolute inset-0 top-20 hidden w-full bg-white opacity-0 transition-opacity duration-500 before:absolute before:right-0 before:h-0 before:w-0 before:-translate-y-1/2 before:border-[1.5rem] before:border-transparent before:border-r-white md:static md:flex md:bg-transparent md:opacity-100 md:before:hidden"
+                        class="absolute right-6 left-6 top-20 hidden h-80 bg-white opacity-0 transition-opacity duration-500 before:absolute before:right-0 before:h-0 before:w-0 before:-translate-y-1/2 before:border-[1.5rem] before:border-transparent before:border-r-white md:static md:flex md:bg-transparent md:opacity-100 md:before:hidden"
                     >
                         <ul
                             class="flex h-full flex-col items-center justify-evenly text-xl text-blue-dark-grayish md:flex-row md:gap-14 md:text-base md:text-white"
@@ -59,7 +59,7 @@
                             <li>
                                 <a
                                     href="#"
-                                    class="inline-block rounded-full bg-yellow py-4 px-6 font-fraunces text-base font-bold uppercase text-blue-dark-desaturated hover:bg-white/30 hover:text-white md:bg-white"
+                                    class="inline-block rounded-full bg-yellow py-4 px-6 font-fraunces text-base font-bold uppercase text-blue-dark-desaturated md:md:bg-white md:hover:bg-white/30 md:hover:text-white"
                                     >Contact</a
                                 >
                             </li>
