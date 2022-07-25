@@ -17,6 +17,9 @@ module.exports = {
                 dark: 'hsl(198, 62%, 26%)',
             },
             white: 'hsl(0, 0%, 100%)',
+            sky: {
+                400: '#38BDF8',
+            },
         },
         fontFamily: {
             barlow: ['Barlow', 'sans-serif'],
