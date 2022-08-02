@@ -12,6 +12,9 @@ It is built with Tailwind CSS.
 # Clone the project.
 git clone https://github.com/sissokho/frontendmentor-sunnyside-agency-landing-page.git
 
+# Navigate to the folder
+cd frontendmentor-sunnyside-agency-landing-page
+
 # Install the dependencies.
 npm install
 
